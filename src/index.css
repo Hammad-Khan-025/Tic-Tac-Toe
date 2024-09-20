@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-custom-gradient {
+    background: radial-gradient(
+        circle at top,
+        rgba(241, 210, 70, 0.98),
+        rgba(250, 176, 103, 0.87)
+      ),
+      url('../images/bg-pattern-dark.png');
+    background-size: 100% 100%, 30% 30%, 100% 100%;
+  }
+
+  
