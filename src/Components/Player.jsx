@@ -20,13 +20,13 @@ const Player = ({ name, symbol,isActive, handleWinnerPlayerName}) => {
         {isEditing ? (
           <input
             type="text"
-            className="w-28 text-center outline-none p-1 bg-slate-800 uppercase "
+            className="w-28 text-center outline-none p-1 bg-slate-800 capitalize "
             value={playerName}
             maxLength={15}
             onChange={(e) => setPlayerName(e.target.value)}
           />
         ) : (
-          <span className=" p-1 uppercase">{playerName}</span>
+          <span className=" p-1 capitalize">{playerName}</span>
         )}
         <span>{symbol}</span>
       </span>
